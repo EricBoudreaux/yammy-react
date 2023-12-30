@@ -1,13 +1,98 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200;0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;0,8..60,800;0,8..60,900;1,8..60,200;1,8..60,300;1,8..60,400;1,8..60,500;1,8..60,600;1,8..60,700;1,8..60,800;1,8..60,900&display=swap');
+
+
+:root {
+    --yellow: #FFBC01;
+    --dim-gray: #1D2028;
+    --dark-black: #1D1D1D;
+    --red: #EE232F;
+    --orange: #FFBB3C;
+    --gray: #FFFFFFB3;
+     }
+   
+   @layer base {
+       h1 {
+          @apply font-['Source_Serif_4'] text-[110px] text-white font-[900]
+       }
+       h3 {
+        @apply font-['Source_Serif_4'] text-[40px] text-white font-[900]
+
+        }
+       h4 {
+        @apply font-['Source_Serif_4'] text-[20px] text-white font-medium 
+
+        }
+        p {
+           @apply font-['Source_Serif_4'] text-[15px] text-[var(--gray)] font-medium
+        }
+        a {
+           @apply font-['Source_Serif_4'] text-[16px] text-white hover:text-[var(--yellow)] font-medium not-italic
+        }
+
+   
+   }
+
+   body {
+      background-color: var(--dim-gray);
+   }
+
+   .nav-bar {
+      box-shadow: 0px 10px 5px 0px rgba(255,255,255,1);
+   }
+
+   .hero {
+      background-image: url('https://assets-global.website-files.com/63bbdce866c703e0406d67b9/63bbdce866c70346e86d68e6_mask_background.png');
+      background-size: cover;
+   }
+
+
+   .specials {
+      background-image: url('https://assets-global.website-files.com/63bbdce866c703e0406d67b9/63bbdce866c7032e466d6893_Vector.png');
+      background-size: 80%;
+      background-repeat: no-repeat;
+      background-position: bottom;
+   }
+   .buytwo {
+      background-image: url('https://assets-global.website-files.com/63bbdce866c703e0406d67b9/63bbdce866c7034fc46d6891_image_here.png');
+      background-size: cover;
+      background-position: 50% -20px;
+   }
+   .ingredients {
+      background-image: url('https://assets-global.website-files.com/63bbdce866c703e0406d67b9/63bbdce866c7036bc86d6895_Group%20112.png');
+      background-repeat: no-repeat;
+      background-position: center;
+
+   }
+   .delivery {
+      background-image: url('https://assets-global.website-files.com/63bbdce866c703e0406d67b9/63bbdce866c70344636d6894_Product_Delivery.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+}
+   .burgerday {
+
+
+
+      background:
+      linear-gradient(
+        rgba(42, 46, 62, 0.5), 
+        rgba(0, 0, 0, 0.8)
+      ),
+      url('https://assets-global.website-files.com/63bbdce866c703e0406d67b9/63bbdce866c7037b4c6d683f_bg-3.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+   .footer {
+      background-image: url('https://assets-global.website-files.com/63bbdce866c703e0406d67b9/63bbdce866c70331d26d6890_Footer%20Background.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
 }
